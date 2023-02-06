@@ -1,8 +1,17 @@
 <template>
-    <nav>
-        <router-link to="/">Home</router-link> |
-        <router-link to="/vueinfo">Vueinfo</router-link> |
-        <router-link to="/about">About</router-link>
+    <nav class="navbar navbar-dark bg-dark">
+		<div class="p-4 d-block d-md-none">
+			<div class="bg-dark p-4">
+				<router-link to="/">Home</router-link> |
+				<router-link to="/vueinfo">Vueinfo</router-link> |
+				<router-link to="/about">About</router-link>
+			</div>
+		</div>
+		<div class="container-fluid d-none d-md-block">
+			<router-link to="/">Home</router-link> |
+			<router-link to="/vueinfo">Vueinfo</router-link> |
+			<router-link to="/about">About</router-link>
+		</div>
     </nav>
 </template>
 
