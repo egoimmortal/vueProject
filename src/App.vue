@@ -1,8 +1,6 @@
 <template>
 	<NavCom></NavCom>
-	<div class="container">
-		<router-view/>
-	</div>
+	<router-view/>
 </template>
 
 <script lang="ts" setup>
