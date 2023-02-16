@@ -1,10 +1,12 @@
 <template>
 	<NavCom></NavCom>
 	<router-view/>
+	<FooterCom></FooterCom>
 </template>
 
 <script lang="ts" setup>
 import NavCom from '@/components/NavCom.vue';
+import FooterCom from './components/FooterCom.vue';
 </script>
 
 <style lang="scss">
