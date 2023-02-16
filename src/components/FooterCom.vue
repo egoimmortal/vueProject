@@ -1,5 +1,5 @@
 <template>
-    <footer class="navbar-fixed-bottom">
+    <footer class="navbar-fixed-bottom fixed-bottom">
         <div class="container">
             © 2023 Pemo
         </div>
@@ -7,8 +7,4 @@
 </template>
 
 <style lang="scss" scoped>
-footer{
-    position: absolute;
-    bottom: 0px;
-}
 </style>
