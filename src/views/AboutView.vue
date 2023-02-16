@@ -6,15 +6,19 @@
 			<div class="left">
 				timeline
 			</div>
-			<div class="right">
-				<div>
+			<div class="right row">
+				<div class="col-12">
 					1. 工作:
 				</div>
-				<div>
+				<div class="col-12">
 					2. 語言:
 				</div>
-				<div>
-					3. 筆記: <a href="https://hackmd.io/@pemomi/r1GSbeq3s">hackmd-css</a>
+				<div class="col-12">
+					<div class="row">
+						<span class="col-12">3. 筆記分享:</span>
+						<a class="col-6" href="https://hackmd.io/@pemomi/r1GSbeq3s">hackmd-css</a>
+						<a class="col-6" href="https://hackmd.io/@pemomi/rk-FRk53o">hackmd-git</a>
+					</div>
 				</div>
 			</div>
 		</div>
