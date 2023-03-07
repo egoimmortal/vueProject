@@ -1,0 +1,32 @@
+{
+    "cat": [
+        {
+            "name": "cat1",
+            "color": "black"
+        },
+        {
+            "name": "cat2",
+            "color": "black"
+        },
+        {
+            "name": "cat3",
+            "color": "red"
+        },
+        {
+            "name": "cat4",
+            "color": "orange"
+        },
+        {
+            "name": "cat5",
+            "color": "yellow"
+        },
+        {
+            "name": "cat6",
+            "color": "green"
+        },
+        {
+            "name": "cat7",
+            "color": "blue"
+        }
+    ]
+}
