@@ -28,7 +28,6 @@ const handleClick = (str: string, num: number) => {
 <style lang="scss" scoped>
 .left-bar-parent{
 	display: flex;
-	justify-content: center;
     flex-direction: column;
 }
 
