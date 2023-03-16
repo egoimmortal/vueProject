@@ -1,6 +1,9 @@
 <template>
     <div class="left-bar-parent col-3">
-        <div v-for="(data, index) in sidebarData" :key="index" class="sidebar" @click="handleClick(data.name)">
+        <div v-for="(data, index) in sidebarData" :key="index"
+            @click="handleClick(data.name, index)"
+            class="sidebar"
+            :class="{'selected': currentNum == index}">
             <div>
                 {{ data.name }}
             </div>
@@ -10,15 +13,16 @@
 
 <script lang="ts" setup>
 import sidebarData from '@/assets/json/sidebar.json';
-import { defineEmits } from 'vue';
+import { defineEmits, ref } from 'vue';
 
 const emit = defineEmits(['SetCategory']);
 
-const handleClick = (str: string) => {
+const currentNum = ref(-1);
+
+const handleClick = (str: string, num: number) => {
+    currentNum.value = num;
     emit('SetCategory', str);
 }
-
-// console.log(sidebarData);
 </script>
 
 <style lang="scss" scoped>
@@ -30,5 +34,17 @@ const handleClick = (str: string) => {
 
 .sidebar{
     background-color: #EAC100;
+
+    & div{
+        cursor: pointer;
+    }
+
+    & div:hover{
+        background-color: #00CACA;
+    }
+
+    &.selected{
+        background-color: #ca5955;
+    }
 }
 </style>
