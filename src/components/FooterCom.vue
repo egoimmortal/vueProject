@@ -7,13 +7,4 @@
 </template>
 
 <style lang="scss" scoped>
-.footer{
-    position: absolute;
-    bottom: 0px;
-    height: 10%;
-
-    & div{
-        height: 100%;
-    }
-}
 </style>
