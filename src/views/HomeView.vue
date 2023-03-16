@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="row">
 			<LeftBarList @SetCategory="SetCategory"></LeftBarList>
-			<ItemList :ItemData="ItemData"></ItemList>
+			<ItemList :itemData="itemData"></ItemList>
 		</div>
 	</div>
 </template>
@@ -15,10 +15,13 @@ import { ref, watch } from 'vue';
 
 const category = ref('');
 
-const ItemData = ref([{
+const itemData = ref([{
 	name: '',
-	color: ''
+	color: '',
+	imgPath: ''
 }]);
+
+itemData.value = [];
 
 function SetCategory(str: string){
 	category.value = str;
@@ -27,10 +30,9 @@ function SetCategory(str: string){
 watch(category, () => {
 	//api
 	if(category.value == 'cat')
-		ItemData.value = ItemTest.cat;
+		itemData.value = ItemTest.cat;
 	else
-		ItemData.value = [];
-	console.log(ItemData.value);
+		itemData.value = [];
 });
 
 </script>

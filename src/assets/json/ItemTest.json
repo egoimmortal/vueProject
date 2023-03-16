@@ -2,31 +2,38 @@
     "cat": [
         {
             "name": "cat1",
-            "color": "black"
+            "color": "black",
+            "imgPath": "cat.png"
         },
         {
             "name": "cat2",
-            "color": "black"
+            "color": "black",
+            "imgPath": "cat.png"
         },
         {
             "name": "cat3",
-            "color": "red"
+            "color": "red",
+            "imgPath": "cat.png"
         },
         {
             "name": "cat4",
-            "color": "orange"
+            "color": "orange",
+            "imgPath": "cat.png"
         },
         {
             "name": "cat5",
-            "color": "yellow"
+            "color": "yellow",
+            "imgPath": "cat.png"
         },
         {
             "name": "cat6",
-            "color": "green"
+            "color": "green",
+            "imgPath": "cat.png"
         },
         {
             "name": "cat7",
-            "color": "blue"
+            "color": "blue",
+            "imgPath": "cat.png"
         }
     ]
 }
