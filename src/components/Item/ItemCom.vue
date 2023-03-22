@@ -1,8 +1,6 @@
 <template>
-    <div class="col-4 commodity">
-        <img :src="require(`@/assets/${props.item.imgPath}`)">
-        {{ props.item.name }}
-    </div>
+    <img :src="require(`@/assets/${props.item.imgPath}`)">
+    {{ props.item.name }}
 </template>
 
 <script lang="ts" setup>
@@ -18,7 +16,8 @@ const props = defineProps<{
 </script>
 
 <style lang="scss" scoped>
-.commodity{
-    height: 300px;
+img{
+    width: 80%;
+    height: auto;
 }
 </style>
